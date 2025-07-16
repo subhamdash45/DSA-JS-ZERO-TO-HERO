@@ -8,8 +8,8 @@ function bubbleSort(arr) {
         temp = arr[j + 1];
         arr[j + 1] = arr[j];
         arr[j] = temp;
+        isChanged = true;
       }
-      isChanged = true;
     }
     if (!isChanged) {
       break;
