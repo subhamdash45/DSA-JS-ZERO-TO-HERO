@@ -1,4 +1,4 @@
-// // find missing number
+// 268. find missing number
 // Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
 // Example 1:
@@ -18,7 +18,6 @@
 // Explanation:
 // n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
 
-
 // sum of first 5 numbers till 5 is (n*n+1)/2 --> 5*6/2
 function findMissingNumber(nums) {
   //the array can have highest number nums.length
@@ -26,6 +25,6 @@ function findMissingNumber(nums) {
   const expectedSum = (n * (n + 1)) / 2;
   const actualSum = nums.reduce((acc, num) => acc + num, 0);
   return expectedSum - actualSum;
-};
+}
 
-console.log(findMissingNumber([3,0,1]))
+console.log(findMissingNumber([3, 0, 1]));

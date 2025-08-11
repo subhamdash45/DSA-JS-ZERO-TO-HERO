@@ -24,6 +24,7 @@
 //   }
 //   for(const key in obj){
 //        if(obj[key]===1){
+// as key is a string in object
 //            return Number(key)
 //        }
 //   }
